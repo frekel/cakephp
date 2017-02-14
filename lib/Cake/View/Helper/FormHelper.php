@@ -1089,6 +1089,7 @@ class FormHelper extends AppHelper {
 		if ($type !== 'hidden' && $error !== false) {
 			$errMsg = $this->error($fieldName, $error);
 			if ($errMsg) {
+				if ( (!isset($options['errorClass'])) || (empty($options['errorClass']) )
 				{
 					$options['errorClass'] = 'error';
 				}
